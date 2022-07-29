@@ -42,7 +42,7 @@ s consists of English letters (lower-case and upper-case), ',' and '.'.
  * @param {number} numRows
  * @return {string}
  */
-var convert = function(s, numRows) {
+var convert = function (s, numRows) {
   const sArr = s.split("");
   let cycles = numRows - 2;
   const columns = [];

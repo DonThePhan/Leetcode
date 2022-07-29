@@ -62,10 +62,10 @@ Constraints:
 s consists of English letters (lower-case and upper-case), digits (0-9), ' ', '+', '-', and '.'.
 */
 
-var myAtoi = function(s) {
+var myAtoi = function (s) {
   let newInt = parseInt(s);
-  let lowerLim = -Math.pow(2, 31)
-  let upperLim = Math.pow(2, 31) - 1
+  let lowerLim = -Math.pow(2, 31);
+  let upperLim = Math.pow(2, 31) - 1;
   if (isNaN(newInt)) return 0;
   if (newInt < lowerLim) {
     return lowerLim;

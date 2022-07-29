@@ -32,9 +32,7 @@ Output: [8,9,9,9,0,0,0,1]
  * @param {ListNode} l2
  * @return {ListNode}
  */
-let addTwoNumbers = function(l1, l2) {
-  
-
+let addTwoNumbers = function (l1, l2) {
   const arr1 = convertLinkedListToReversedArray(l1);
   const arr2 = convertLinkedListToReversedArray(l2);
 
@@ -60,13 +58,15 @@ let addTwoNumbers = function(l1, l2) {
     let val = newArr.pop();
     newLinkedList.val = val === undefined ? 0 : val;
     newLinkedList.next =
-      prevLinkedList === undefined || Object.keys(prevLinkedList).length === 0 ? null : prevLinkedList;
+      prevLinkedList === undefined || Object.keys(prevLinkedList).length === 0
+        ? null
+        : prevLinkedList;
     prevLinkedList = { ...newLinkedList };
   }
   return newLinkedList;
 };
 
-let convertLinkedListToReversedArray = function(linkedList) {
+let convertLinkedListToReversedArray = function (linkedList) {
   const arr = [];
   let val = linkedList.val;
   let obj = linkedList;

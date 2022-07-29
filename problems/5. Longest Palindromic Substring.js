@@ -22,7 +22,7 @@ s consist of only digits and English letters.
  * @param {string} s
  * @return {string}
  */
-var longestPalindrome = function(s) {
+var longestPalindrome = function (s) {
   let longestPalindrome = "";
   let palindrome;
 

@@ -32,7 +32,7 @@ Constraints:
  * @param {number} x
  * @return {boolean}
  */
-var isPalindrome = function(x) {
+var isPalindrome = function (x) {
   let xString = x.toString();
   let end = xString.length - 1;
   let middle = Math.floor(xString.length / 2);

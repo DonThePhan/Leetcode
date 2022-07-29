@@ -24,7 +24,7 @@ Constraints:
 -231 <= x <= 231 - 1
 */
 
-var reverse = function(x) {
+var reverse = function (x) {
   let xString = x.toString();
   let xStringReverse = "";
   for (let i = xString.length - 1; i >= 0; i--) {

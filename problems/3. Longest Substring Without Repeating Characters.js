@@ -31,9 +31,9 @@ s consists of English letters, digits, symbols and spaces.
  * @param {string} s
  * @return {number}
  */
-var lengthOfLongestSubstring = function(s) {
+var lengthOfLongestSubstring = function (s) {
   let longestString = 0;
-  let sLength = s.length
+  let sLength = s.length;
   for (let i = 0; i < sLength; i++) {
     let currentString = "";
     for (let j = 0; j + i < sLength; j++) {

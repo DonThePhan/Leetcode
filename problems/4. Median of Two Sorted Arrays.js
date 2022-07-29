@@ -32,7 +32,7 @@ nums2.length == n
  * @param {number[]} nums2
  * @return {number}
  */
-var findMedianSortedArrays = function(nums1, nums2) {
+var findMedianSortedArrays = function (nums1, nums2) {
   const lengthNums1 = nums1.length;
   const lengthNums2 = nums2.length;
   let nums1Index = 0;
@@ -41,7 +41,10 @@ var findMedianSortedArrays = function(nums1, nums2) {
 
   while (true) {
     if (nums1Index < lengthNums1 && nums2Index < lengthNums2) {
-      if (nums1[nums1Index] < nums2[nums2Index] || nums1[nums1Index] === nums2[nums2Index]) {
+      if (
+        nums1[nums1Index] < nums2[nums2Index] ||
+        nums1[nums1Index] === nums2[nums2Index]
+      ) {
         joinedNums.push(nums1[nums1Index]);
         nums1Index++;
       } else {
@@ -70,4 +73,4 @@ var findMedianSortedArrays = function(nums1, nums2) {
   return result;
 };
 
-findMedianSortedArrays([], [ 1 ]);
+findMedianSortedArrays([], [1]);
